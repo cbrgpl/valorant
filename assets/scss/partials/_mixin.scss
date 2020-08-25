@@ -1,0 +1,19 @@
+@mixin absolute-center {
+	position: absolute;
+	right: 50%;
+	bottom: 50%;
+	transform: translate(50%, 50%);
+}
+
+@mixin grid-center {
+	display: grid;
+	place-items: center;
+}
+
+@mixin many-lines-wrap {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+}
